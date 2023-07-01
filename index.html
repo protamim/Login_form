@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Form</title>
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main_container">
+      <div class="form_container">
+        <h3 class="title">Login Form</h3>
+        <form>
+          <div class="form_control">
+            <!-- There is small issue! Used text as type in the email field -->
+            <input type="text" id="email_input" required />
+            <label>Email Address</label>
+          </div>
+          <div class="form_control">
+            <input type="password" id="pass_input" required />
+            <label>Password</label>
+          </div>
+
+          <div class="form_bottom">
+            <label>
+              <input type="checkbox" id="check_input" />
+              Remember me
+            </label>
+            <a href="#" class="forgot_link"> Forgot Password? </a>
+          </div>
+
+          <div class="btn_login">
+            <a href="#">Login</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

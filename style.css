@@ -1,0 +1,127 @@
+/* Google Font -Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* Universal Style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Background Style */
+.main_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(45deg, #aff382, #00f, #4a3);
+}
+
+/* Form Area and Input- email, password */
+.main_container .form_container {
+    background-color: #fff;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 1px 1px 2px 5px rgb(255 255 255 / 87%);
+}
+.form_container .title {
+    font-size: 25px;
+    background: linear-gradient(45deg, #aff382, #00f, #4a3);
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 20px 0;
+    margin-bottom: 50px;
+    color: #fff;
+}
+form {
+    padding: 0 30px;
+}
+.form_control,
+.btn_login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form_container .form_control {
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+}
+.form_control label {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    transition: all .3s ease;
+}
+.form_control #email_input,
+.form_control #pass_input {
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+    padding-left: 15px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    outline: none;
+}
+#email_input:focus ~ label,
+#pass_input:focus ~ label,
+#pass_input:valid ~ label,
+#email_input:valid ~ label{
+    top: 0%;
+    transform: translateY(-50%);
+    background-color: #fff;
+    padding: 0 4px;
+}
+#email_input:focus,
+#pass_input:focus {
+    border: 1px solid greenyellow;
+}
+
+/* Form Bottom - Remember me, forgot password */
+form .form_bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.form_bottom label {
+    font-size: 14px;
+    font-weight: 400;
+}
+.form_bottom .forgot_link {
+    color: rgb(48, 61, 250);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    transition: all 0.3s ease;
+}
+.form_bottom .forgot_link:hover {
+    text-decoration: underline;
+}
+
+/* Login Button */
+.form_container .btn_login {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.form_container .btn_login a {
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 300;
+    color: #fff;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    background: linear-gradient(45deg, #aff382, #00f, #4a3);
+}
+.form_container .btn_login a:hover {
+    transform: scale(0.95);
+}
